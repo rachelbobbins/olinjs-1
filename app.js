@@ -6,7 +6,7 @@ var app = express();
 
 // Create the route for the path / and send a creepy response.
 app.get('/', function (req, res) {
-  res.send('<h1>Hello ' + (process.env.USER || 'Olin.js') + '!</h1>');
+  res.send('<h1>Hello ' + (process.env.USER || 'Olin.js') + '!</h1></br><h3>I can see you</h3>');
 });
 
 // Start serving webpages.
